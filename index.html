@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Surname</th>
+                <th>Date 1</th>
+                <th>Date 2</th>
+                <th>Date 3</th>
+                <th>Date 4</th>
+                <th>Date 5</th>
+                <th>Date 6</th>
+                <th>Date 7</th>
+                <th>Date 8</th>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-1">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-1">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-2">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-2">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-3">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-3">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-4">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-4">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-5">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-5">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-6">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-6">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-7">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-7">q/b</button>
+                </th>
+                <th>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-ie-8">i/e</button>
+                    <button onclick="openAllCheckModal(this)" id="btn-all-qb-8">q/b</button>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yunis</td>
+                <td>Nadirli</td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ikram</td>
+                <td>Abdulayev</td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Murad</td>
+                <td>Abiyev</td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ceyhun</td>
+                <td>AXundzade</td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Revan</td>
+                <td>Yunuszade</td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Kenan</td>
+                <td>Memmedov</td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+                <td><button>d/e</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="all-check-modal">
+        <div class="container">
+            <p>Are You Sure?</p>
+            <div class="buttons">
+                <button id="btn-delete-submit" onclick="allCheck()">Yes</button>
+                <button id="btn-delete-cancel" onclick="closeAllCheckModal()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="check-modal">
+        <button id="btn-close" onclick="closeCheckModal()">X</button>
+        <div class="container">
+            <div class="buttons">
+                <button id="btn-ie-submit" onclick="checkIE()">i/e</button>
+                <button id="btn-qb-submit" onclick="checkQB()">q/b</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
